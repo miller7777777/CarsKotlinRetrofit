@@ -39,12 +39,12 @@ class MainActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     val carsResponse: CarsResponse = response.body()!!
 
-                    Log.d("CARS", carsResponse.carslist.size.toString())
+//                    Log.d("CARS", carsResponse.carslist.size.toString())
 
-//                    carlist.addAll(carsResponse!!.carslist)
+                    carlist.addAll(carsResponse!!.carslist)
 
 
-//                    tv.text = carsResponse.carslist[0].toString()
+                    tv.text = carsResponse.carslist[0].toString()
                     //                    tv.setText("1");
                 }
             }
