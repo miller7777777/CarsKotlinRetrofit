@@ -5,4 +5,4 @@ data class Car(val name: String,
                val image: String,
                val vin: String)
 
-data class CarsResponse(val carslist: List<Car>)
+data class CarsResponse(val cars: List<Car>)

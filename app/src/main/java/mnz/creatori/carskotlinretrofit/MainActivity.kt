@@ -41,10 +41,10 @@ class MainActivity : AppCompatActivity() {
 
 //                    Log.d("CARS", carsResponse.carslist.size.toString())
 
-                    carlist.addAll(carsResponse!!.carslist)
+                    carlist.addAll(carsResponse!!.cars)
 
 
-                    tv.text = carsResponse.carslist[0].toString()
+                    tv.text = carlist[0].toString()
                     //                    tv.setText("1");
                 }
             }
